@@ -8,5 +8,10 @@ def convert(n):
     else:
         return n
 
-def run():
-    print("")
+def run(n):
+    result = ""
+    for i in range(1,n):
+        result+=str(convert(i))+" "
+    if (n>0):
+        result+=str(convert(n))
+    return result
