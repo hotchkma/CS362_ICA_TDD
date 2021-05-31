@@ -6,7 +6,7 @@ def convert(n):
     elif (n%5==0):
         return "Buzz"
     else:
-        return "ERROR"
+        return n
 
 def run():
     print("")
