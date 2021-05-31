@@ -18,4 +18,6 @@ class TestCase(unittest.TestCase):
         self.assertEqual(FizzBuzz.convert(4),4)
         self.assertEqual(FizzBuzz.convert(7),7)
         self.assertEqual(FizzBuzz.convert(23),23)
-
+    def test_prog(self):
+        self.assertEqual(FizzBuzz.run(10),"1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz")
+        self.assertEqual(FizzBuzz(3),"1 2 Fizz")
