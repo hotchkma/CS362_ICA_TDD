@@ -10,4 +10,8 @@ class TestCase(unittest.TestCase):
         self.assertEqual(LeapYr.go(16),1)
         self.assertEqual(LeapYr.go(44),1)
         self.assertEqual(LeapYr.go(2020),1)
-
+    def test_400(self):
+        self.assertEqual(LeapYr.go(400),1)
+        self.assertEqual(LeapYr.go(300),0)
+        self.assertEqual(LeapYr.go(100),0)
+        
