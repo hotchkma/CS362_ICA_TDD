@@ -10,3 +10,8 @@ class TestCase(unittest.TestCase):
         self.assertEqual(FizzBuzz.convert(5),"Buzz")
         self.assertEqual(FizzBuzz.convert(20),"Buzz")
         self.assertEqual(FizzBuzz.convert(65),"Buzz")
+    def test_fizz_buzz(self):
+        self.assertEqual(FizzBuzz.convert(15),"FizzBuzz")
+        self.assertEqual(FizzBuzz.convert(45),"FizzBuzz")
+        self.assertEqual(FizzBuzz.convert(90),"FizzBuzz")
+        
