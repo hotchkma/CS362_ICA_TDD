@@ -14,4 +14,8 @@ class TestCase(unittest.TestCase):
         self.assertEqual(FizzBuzz.convert(15),"FizzBuzz")
         self.assertEqual(FizzBuzz.convert(45),"FizzBuzz")
         self.assertEqual(FizzBuzz.convert(90),"FizzBuzz")
-        
+    def test_basic(self):
+        self.assertEqual(FizzBuzz.convert(4),4)
+        self.assertEqual(FizzBuzz.convert(7),7)
+        self.assertEqual(FizzBuzz.convert(23),23)
+
